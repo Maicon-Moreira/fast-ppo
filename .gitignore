@@ -1,0 +1,4 @@
+*.gif
+*.png
+models
+__pycache__
