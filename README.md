@@ -33,3 +33,13 @@ And here's a plot of the training progress:
 ![CartPole-v1 Image](./images/CartPole-v1.png)
 By running `benchmark-train-speed.py`, you can execute 50 training sessions. As indicated by the graph below, most of the training sessions converge to the 200 reward mean within the 30-50 actor updates range, which equates to approximately 3-5 seconds.
 ![CartPole-v1 Benchmark Image](./images/CartPole-v1-benchmark.png)
+
+## TODO
+
+- Add support for Random Network Distillation (RND) for exploration
+- Train on sparse reward environments, such as MountainCar-v0
+- Add support for continuous action spaces
+- Add support for state dependent models, e.g. LSTM
+- Train more complex models, such as CNNs, LSTMs, and Transformers
+- Train on more complex environments, such as Atari games
+- Improve even more the training speed by optimizing as much as possible memory transfers from CPU to GPU and vice versa

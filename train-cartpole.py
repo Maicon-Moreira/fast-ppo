@@ -23,8 +23,8 @@ def main():
         entropy_coefficient=0.01,
         target_reward_mean=200,
         experience_collection_model_device="cpu",
-        advantage_calculation_model_device="cuda",
-        training_model_device="cuda",
+        advantage_calculation_model_device="cuda" if t.cuda.is_available() else "cpu",
+        training_model_device="cuda" if t.cuda.is_available() else "cpu",
     )
 
     plot_training_info(
